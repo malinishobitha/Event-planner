@@ -1,0 +1,79 @@
+/* Navbar container */
+.container-Fluid {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar background */
+.navbar {
+  background-color: #000080 !important;
+  padding: 10px 20px;
+}
+
+/* Logo styling */
+.navbar-brand img {
+  height: 100px; 
+  width: 100px;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: #FF007F !important; 
+  margin-left: 30px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+/* search box */
+.navbars {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbars input {
+  width: 80%;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #000080;
+  transition: 0.3s ease-in-out;
+}
+
+.navbars input:focus {
+  border-color: #ff007f;
+  box-shadow: 0px 0px 8px rgba(255, 0, 127, 0.8);
+}
+
+.navbars input::placeholder {
+  color: #000000;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.navbars button {
+  background: #ff007f;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(255, 0, 127, 0.5);
+}
+
+.navbars button:hover {
+  background: #000080;
+  color: #ff007f;
+  box-shadow: 0px 4px 12px rgba(255, 0, 127, 0.8);
+}
