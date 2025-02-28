@@ -1,5 +1,7 @@
 import React from "react";
 import corporateImage from './photos/carporate.png';
+import decoration from "./photos/single-line-border-designs-png-11552244732sjrezje5st-removebg-preview.png";
+
 function Corporate(){
     return(
          <div className='Container-Fluid'>
