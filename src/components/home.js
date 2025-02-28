@@ -7,10 +7,22 @@ import pinkFlower from "./photos/pink flower.jpg";
 import flowerdecor from "./photos/flower decor.jpg";
 import restaraunt from "./photos/restaurant-hall.jpg";
 import decoration from "./photos/single-line-border-designs-png-11552244732sjrezje5st-removebg-preview.png";
-
+import chooseImage from './photos/corporate-events-3.jpg';
+import service1 from './photos/1.png';
+import service2 from './photos/2.png';
+import service3 from './photos/3.png';
+import service4 from './photos/4.png';
+import service5 from './photos/5.png';
+import service6 from './photos/6.png';
+import service7 from './photos/7.png';
+import service8 from './photos/8.png';
+import service9 from './photos/9.png';
+import service10 from './photos/10.png';
+import service11 from './photos/11.png';
+import service12 from './photos/12.png';
 function HomePage() {
   return (
-    <div className="Container-Field">
+    <div className="Container-Fluid">
       {/* Carousel Section */}
       <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
@@ -60,16 +72,129 @@ function HomePage() {
       </div>
 
       <div className="services">
-        <div className="card" style={{ width: "18rem" }}>
-          <img src="service-image.jpg" className="card-img-top" alt="Service" />
-          <div className="card-body">
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-            </p>
-          </div>
-        </div>
-      </div> 
+        <div class="card" style={{width: "20rem"}}>
+  <img src={service1} class="card-img-top" alt="specificimages"/>
+  <div class="card-body">
+    <h5 class="card-title">MICE Events</h5>
+    <p class="card-text">Meetings, Incentives, Conference Meetings</p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
+  </div>
+  <div class="card" style={{width: "20rem"}}>
+  <img src={service11} class="card-img-top" alt="speicficimages"/>
+  <div class="card-body">
+    <h5 class="card-title">Product Launching Events</h5>
+    <p class="card-text">Launching a new products is a crucial moment for every business.  This is requires a combination of strategic planning.</p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
 </div>
+<div class="card" style={{width: "20rem"}}>
+  <img src={service12} class="card-img-top" alt="..."/>
+  <div class="card-body">
+    <h5 class="card-title">Company Gathering</h5>
+    <p class="card-text">MN Event  Organizer is a specialist in organizing memorable and impactful corporate meetings.</p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
+</div>
+<div class="card" style={{width: "20rem"}}>
+  <img src={service2} class="card-img-top" alt="specificimages"/>
+  <div class="card-body">
+    <h5 class="card-title">Team Buildidng</h5>
+    <p class="card-text">Organizing a team-building event can be a highly rewarding experience, offering numerous benefits to both the organizer and the participants</p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
+</div>
+<div class="card" style={{width: "20rem"}}>
+  <img src={service9} class="card-img-top" alt="specificimages"/>
+  <div class="card-body">
+    <h5 class="card-title">Team Catering
+    </h5>
+    <p class="card-text">Each of these themes unique dining experience, transporting guest to a different time or place and making the evening truly unforgettadble</p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
+</div>
+<div class="card" style={{width: "20rem"}}>
+  <img src={service10} class="card-img-top" alt="specificimages"/>
+  <div class="card-body">
+    <h5 class="card-title">Tour Organizer
+    </h5>
+    <p class="card-text">Our passion is a curating unforgettadble journeys, bring together like-minded adventures, and revealing the hidden gems of our planet. </p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
+</div>
+<div class="card" style={{width: "20rem"}}>
+  <img src={service3} class="card-img-top" alt="specificimages"/>
+  <div class="card-body">
+    <h5 class="card-title">Sound Systems</h5>
+    <p class="card-text">We are a provider of sound system rental services with various package options ranging from speakers, wireless mic, cable mic, mixer etc.</p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
+</div>
+<div class="card" style={{width: "20rem"}}>
+  <img src={service4}class="card-img-top" alt="specificimage"/>
+  <div class="card-body">
+    <h5 class="card-title">Lighting</h5>
+    <p class="card-text">We are a provider of event lighting rental services with various package options ranging from par LED, moving head, halogen, smoke machine, etc. </p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
+</div>
+<div class="card" style={{width: "20rem"}}>
+  <img src={service5} class="card-img-top" alt="specificimage"/>
+  <div class="card-body">
+    <h5 class="card-title">Entertainment</h5>
+    <p class="card-text">We are a provider various Entertainment such as dance (traditional & modern), music, event MC, Usher, and SPG </p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
+</div>
+<div class="card" style={{width: "20rem"}}>
+  <img src={service6} class="card-img-top" alt="specificimage"/>
+  <div class="card-body">
+    <h5 class="card-title">Photography</h5>
+    <p class="card-text">We also provide various Photography Services Such as Candid, Videography, Albums </p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
+</div>
+<div class="card" style={{width: "20rem"}}>
+  <img src={service7} class="card-img-top" alt="..."/>
+  <div class="card-body">
+    <h5 class="card-title">Stage Decoration</h5>
+    <p class="card-text">We Provide various types of stages for your events such as gala dinners, awards night,etc. </p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
+</div>
+<div class="card" style={{width: "20rem"}}>
+  <img src={service8} class="card-img-top" alt="Specificimages"/>
+  <div class="card-body">
+    <h5 class="card-title">Multimedia</h5>
+    <p class="card-text">We are a provider of multimedia rental  services for event/meeting needs such as projectors, laptop, computers (PCs), Printers, Drone Camera etc.  </p>
+    <a href="#" class="btn btn-primary">SPECIFICS</a>
+  </div>
+</div>
+</div>
+<div className="card mb-3" style={{ width: "95%" }}>
+  <div className="row g-0">
+    <div className="col-md-6">
+      <div className="card-body chooseimg">
+        <h1 className="card-title ">Why should you choose Us?</h1>
+        <img src={decoration} alt="decoration" className="decoration-img" />
+        <p>Official Company</p>
+        <p>Professional Teamwork</p>
+        <p>Best Price</p>
+        <p>Event Consulting</p>
+        <p>Multimedia Support</p>
+        <p>Generator Support</p>
+        <p>Stage Rental</p>
+      </div>
+    </div>
+    <div className="col-md-6">
+      <img src={chooseImage} className="img-fluid rounded-start" alt="chooseimg" />
+    </div>
+  </div>
+</div>
+
+
+      </div> 
+
   );
 }
 
