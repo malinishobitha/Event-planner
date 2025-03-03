@@ -14,8 +14,8 @@ function Navbars() {
             <Nav.Link href="#">DESTINATION</Nav.Link>
             <Nav.Link href="/weddingplans">WEDDING PLANS </Nav.Link>
             <Nav.Link href="/Corporates">CORPORANTE EVENT</Nav.Link>
-            <Nav.Link href="#">VLOGS</Nav.Link>
-            <Nav.Link href="#">WHO WE ARE</Nav.Link>
+            <Nav.Link href="/vlogs">VLOGS</Nav.Link>
+            <Nav.Link href="who-we-are">WHO WE ARE</Nav.Link>
             <Nav.Link href="#">DROP US A LINE</Nav.Link>
             <Nav.Link href="#">LOGIN / REGISTER </Nav.Link>
 
@@ -23,14 +23,7 @@ function Navbars() {
           </Nav>
         </Navbar.Collapse>
         </Navbar>
-        <nav class="navbars bg-body-tertiary">
-  <div class="container-fluid">
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button class="btn btn-outline-success" type="submit">BOOK AN APPOINTMENT </button>
-    </form>
-  </div>
-</nav>
+       
       </div>
    
   );

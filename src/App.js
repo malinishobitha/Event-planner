@@ -8,6 +8,8 @@ import HomePage from './components/home';
 import Footer from './components/Footer';
 import Weddingplans from './components/weddingplans';
 import Corporate from './components/Corporates';
+import Vlogs from './components/vlogs';
+import Whoweare from './components/who-we-are';
 function App() {
   return (
     <Router>
@@ -16,6 +18,9 @@ function App() {
       <Route path="/" element={<HomePage />} />       
        <Route path="/weddingplans" element={<Weddingplans/>} />
        <Route path="/corporates" element={<Corporate />} />
+       <Route path="/vlogs" element={<Vlogs />} />
+       <Route path="/who-we-are" element={<Whoweare/>} />
+
        </Routes>
       <Footer/>
     </Router>

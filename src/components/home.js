@@ -23,6 +23,15 @@ import service12 from './photos/12.png';
 function HomePage() {
   return (
     <div className="Container-Fluid">
+      {/* Search bar */}
+      <nav class="navbars bg-body-tertiary">
+  <div class="container-fluid">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">BOOK AN APPOINTMENT </button>
+    </form>
+  </div>
+</nav>
       {/* Carousel Section */}
       <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
