@@ -86,7 +86,7 @@ function HomePage() {
   <div class="card-body">
     <h5 class="card-title">MICE Events</h5>
     <p class="card-text">Meetings, Incentives, Conference Meetings</p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Mice" class="btn btn-primary">SPECIFICS</a>
   </div>
   </div>
   <div class="card" style={{width: "20rem"}}>
@@ -94,7 +94,7 @@ function HomePage() {
   <div class="card-body">
     <h5 class="card-title">Product Launching Events</h5>
     <p class="card-text">Launching a new products is a crucial moment for every business.  This is requires a combination of strategic planning.</p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Launching" class="btn btn-primary">SPECIFICS</a>
   </div>
 </div>
 <div class="card" style={{width: "20rem"}}>
@@ -102,24 +102,24 @@ function HomePage() {
   <div class="card-body">
     <h5 class="card-title">Company Gathering</h5>
     <p class="card-text">MN Event  Organizer is a specialist in organizing memorable and impactful corporate meetings.</p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Gathering" class="btn btn-primary">SPECIFICS</a>
   </div>
 </div>
 <div class="card" style={{width: "20rem"}}>
   <img src={service2} class="card-img-top" alt="specificimages"/>
   <div class="card-body">
-    <h5 class="card-title">Team Buildidng</h5>
+    <h5 class="card-title">Team Building</h5>
     <p class="card-text">Organizing a team-building event can be a highly rewarding experience, offering numerous benefits to both the organizer and the participants</p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Building" class="btn btn-primary">SPECIFICS</a>
   </div>
 </div>
 <div class="card" style={{width: "20rem"}}>
   <img src={service9} class="card-img-top" alt="specificimages"/>
   <div class="card-body">
-    <h5 class="card-title">Team Catering
+    <h5 class="card-title">Themed Catering
     </h5>
     <p class="card-text">Each of these themes unique dining experience, transporting guest to a different time or place and making the evening truly unforgettadble</p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Catering" class="btn btn-primary">SPECIFICS</a>
   </div>
 </div>
 <div class="card" style={{width: "20rem"}}>
@@ -128,7 +128,7 @@ function HomePage() {
     <h5 class="card-title">Tour Organizer
     </h5>
     <p class="card-text">Our passion is a curating unforgettadble journeys, bring together like-minded adventures, and revealing the hidden gems of our planet. </p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Tour" class="btn btn-primary">SPECIFICS</a>
   </div>
 </div>
 <div class="card" style={{width: "20rem"}}>
@@ -136,7 +136,7 @@ function HomePage() {
   <div class="card-body">
     <h5 class="card-title">Sound Systems</h5>
     <p class="card-text">We are a provider of sound system rental services with various package options ranging from speakers, wireless mic, cable mic, mixer etc.</p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Sound" class="btn btn-primary">SPECIFICS</a>
   </div>
 </div>
 <div class="card" style={{width: "20rem"}}>
@@ -144,7 +144,7 @@ function HomePage() {
   <div class="card-body">
     <h5 class="card-title">Lighting</h5>
     <p class="card-text">We are a provider of event lighting rental services with various package options ranging from par LED, moving head, halogen, smoke machine, etc. </p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Lighting" class="btn btn-primary">SPECIFICS</a>
   </div>
 </div>
 <div class="card" style={{width: "20rem"}}>

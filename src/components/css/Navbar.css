@@ -20,7 +20,7 @@
 /* Nav links */
 .navbar-nav .nav-link {
   color: #FF007F !important; 
-  margin-left: 30px;
+  margin-left: 0px;
   font-weight: bold;
   padding: 10px 15px;
   transition: 0.3s ease-in-out;
@@ -37,6 +37,7 @@
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+ 
 }
 
 .navbars input {

@@ -422,10 +422,192 @@ ul li {
   color: #000000;
   font-weight: bold;
 }
-.img-fluid{
+.about-image{
   padding-left: 90px;
   margin-top: 20px;
 }
+.About-det{
+  text-align: center;
+  width: 900px;
+  margin: auto;
+  margin-top: 20px;
+}
+.About-det h4{
+  font-size: 30px;
+  font-weight: bold;
+}
+.About-det h1{
+  font-weight: bold;
+}
+.About-det p{
+  color:#000000;
+  font-weight: 500;
+}
+.contact-image{
+  padding-left: 0%;
+  border-radius: 10px;
+}
+/* Container Styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+/* Form Styling */
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000080;
+}
+
+/* Input Fields */
+.contact-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Focus Effect */
+.contact-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Error Messages */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Submit Button */
+.contact-form button {
+  background: #FF007F;
+  color: #000080;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  color: #FF007F;
+  background: #000080;
+}
+.contact{
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* Login and register section */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#000080;;
+  position: relative;
+}
+.login-input input{
+  width: 400px;
+  border-radius: 10px;
+  background-color: #e2e1e1;
+}
+.login-input ::placeholder {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+.login-container h2{
+  color:white;
+  font-weight: bold;
+}
+
+
+
+/* Popup Background */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;  
+}
+
+/* Popup Content */
+.popup-content {
+  
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  position: relative;
+  z-index: 10000;  
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color:#000080;
+  z-index: 10000;
+}
+.login-button{
+  background:#FF007F;
+  color:#000080;
+}
+.Mice-det{
+  width: 90%;
+  background-color: rgb(254, 245, 226);
+  margin: auto;
+  color:#000000;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 30PX;
+}
+.Mice-det h1{
+  font-weight: bold;
+  text-align: center;
+}
+.Mice-det h2{
+  font-weight: bold;
+}
+.Mice-det ul {
+  list-style-type: disc;
+  padding-left: 50px; 
+}
+
+.Mice-det ul li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px; 
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
