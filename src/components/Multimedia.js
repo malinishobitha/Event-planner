@@ -1,6 +1,6 @@
-import React,{useState} from 'react';
-import cateringImage from './photos/Themed Catering.png';
-function Catering(){
+import React, {useState} from 'react';
+import MultimediaImage from './photos/Multimedia.png';
+function Multimedia(){
    const [showForm, setShowForm] = useState(false);
     const [formData, setFormData] = useState({
       name: "",
@@ -156,33 +156,43 @@ function Catering(){
           </div>
         )}
   
-<img src={cateringImage} className="img-fluid contact-image" alt="Contact Us" />
+<img src={MultimediaImage} className="img-fluid contact-image" alt="Contact Us" />
  <div className='Mice-det'>
-    <h1>Themed Catering</h1>
+    <h1>Multimedia</h1>
     <h2>DESCRIPTION</h2>
-    <p>Each of these themes offers a unique dining experience, transporting guests to a different time or place, and making the evening truly unforgettable.  A comprehensive catering service for event planners provides customized menus, expert food preparation and presentation, attentive on-site service, and seamless logistics management, tailored to the specific needs of each event, ensuring a memorable culinary experience for guests while aligning with the overall event vision and budget.</p>
+    <p>A multimedia service for an event planner encompasses the creation and management of a diverse range of digital media elementsto enhanve an event's  visual appeal, engagement, and communication, including live streaming, video production, interactive displays, social media content, presentations, and graphic design, all tailored to effectively promote and deliver the event experience across various platforms.</p>
+ <h2>Key elements of multimedia services for event planners:</h2>
  <ul>
-    <li><strong>Hollywood Glamour</strong></li>
-    <li><strong>Mediterranean Mirage</strong></li>
-    <li><strong>Retro Radiance</strong></li>
-    <li><strong>Tropical Paradise</strong></li>
-    <li><strong>Masquerade Ball</strong></li>
-    <li><strong>Nautical Nights</strong></li>
-    <li><strong>Midnight in Paris</strong></li>
-    <li><strong>Safari Supper</strong></li>
+    <li><h2>Pre-event promotion</h2></li>
+    <li><strong>Event website design:</strong>A visually engaging website to showcase event details, registration, speaker information, and event branding.</li>
+    <li><strong>Social media marketing campaigns:</strong>Strategic content creation and distribution across platforms like Facebook, Instagram, Twitter to build anticipation and drive registration</li>
+ <li><strong>Video teasers and trailers:</strong>Short, captivating videos to highlight event highlights and key speakers.</li>
+ <li><strong>Email marketing Campaigns:</strong>Targeted email blasts to keep atttendees informed about updates and important event details.</li>
+ </ul>
+ <ul>
+    <li><h2>Live event production:</h2></li>
+    <li><strong>Live streaming:</strong>Broadcasting the event in real-time to virtual attendees through platforms like youTube or dedicated event platforms.</li>
+    <li><strong>Video recording:</strong>Capturing key moments and presentations for post-event content.</li>
+    <li><strong>On-site digital displays:</strong>Interctive screens showcasing event agenda, speakers with inntegrated multimedia elements like graphics, animations, and videos.</li>
+    <li><strong>presentation design:</strong>Creating visually appealing slides for speakers with integrated multimedia elements like graphics, animations, and videos.</li>
     </ul>
-  <h2>Key points to highlight in a catering services description from MN Event Planners:</h2>
-  <ul>
-<li><h2>Menu Customization:</h2>Ability to create unique menus based on dietary restrictions, cultural considerations, and client preferences, inluding options for hors d'oeuvres, buffets, plated meals, and dessert spreads.</li>
-<li><h2>Professional Staff:</h2>Highly trained waitstaff and culinary team to deliver exceptional service and food quality throughout the event </li>
-<li><h2>Flexible Options:</h2>Catering to various event types like weddings, corporate  gathering, conferences, birthhday parties, and more.</li>  
-<li><h2>On-Site Management:</h2>Coordination with event planners to ensure smooth food service execution, including timing, presentation, and any special requests.</li>  
-<li><h2>Logistics Expertise:</h2>Handling food delivery, setup, breakdown, and proper sanitation procedures.</li>
-<li><h2>Budget-Friendly Solutions</h2>Providing diverse menu options to fit different budget constraints while maintaining quality standards.</li>  
-  </ul>
+    <ul>
+        <li><h2>Post event engagement:</h2></li>
+        <li><strong>Event highlights video:</strong>A compiled video showcasing the best moments of the event for post-event ppromotion and sharing.</li>
+        <li><strong>Photo gallery</strong>Capturing and sharing high-quality event photos on social media and the event website.</li>
+        <li><strong>Social media recap:</strong>Compiling social media posts and engagementsurrounding the event to measure impact. </li>
+        <li><strong>On-demand video access:</strong>Providing recorded sessions from the event to attendees who couldn't attend live.</li>
+    </ul>
+    <ul>
+        <h2>Benefits of multimedia services for event planners</h2>
+        <li><strong>Increased audience reach:</strong>Broden event exposure through live streaming and online content.</li>
+        <li><strong>Enhanced engagement:</strong>Interactive elements like polls and social media integration keep attendees actively involved.</li>
+        <li><strong>Professional brand image:</strong>High-quality visual content reinforces the events's professionalism and brand identity.</li>
+         <li><strong>Measurable results:</strong>Analytics from digital platforms allow for tracking event impact and ROI.</li>
+    </ul>
 
     </div>
    </div>
     );
 }
-export default Catering
+export default Multimedia

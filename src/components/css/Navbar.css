@@ -28,6 +28,8 @@
 
 .navbar-toggler {
   border-color: rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-top: auto;
 }
 /* search box */
 .navbars {
@@ -77,4 +79,20 @@
   background: #000080;
   color: #ff007f;
   box-shadow: 0px 4px 12px rgba(255, 0, 127, 0.8);
+}
+@media  screen and (max-width:768px){
+.navbars button{
+  font-size: 14px;
+  padding: 10px 15px;
+}
+.navbar{
+  padding:10px;
+
+}
+.navbar-brand img {
+  height: 80px; 
+  width: 80px;
+
+}
+
 }

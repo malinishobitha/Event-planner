@@ -20,6 +20,10 @@ import Catering from './components/Catering';
 import Tour from './components/Tour';
 import Sound from "./components/Sound";
 import Lighting from './components/Lighting';
+import Entertainment  from "./components/Entertainment";
+import Photography from "./components/Photography";
+import Stage from "./components/Stage";
+import Multimedia from './components/Multimedia';
 function App() {
   const [showLogin, setShowLogin] = useState(false); 
 
@@ -40,11 +44,15 @@ function App() {
         <Route path="/Catering"element={<Catering/>}/>
         <Route path="/Tour"element={<Tour/>}/>
        <Route path="/Sound"element={<Sound/>}/>
+       <Route path="/Entertainment"element={<Entertainment/>}/>
         <Route path="/Lighting"element={<Lighting/>}/>
+        <Route path="/Photography"element={<Photography/>}/>
+        <Route path="/Stage"element={<Stage/>}/>
+        <Route path="/Multimedia"element={<Multimedia/>}/>
       </Routes>
       <Footer />
 
-      {/* ✅ Popup Login Form */}
+      
       {showLogin && (
         <div className="popup">
           <div className="popup-content">

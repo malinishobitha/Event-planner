@@ -14,7 +14,7 @@ function Navbars({ onLoginClick }) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="#">DESTINATION</Nav.Link>
+            <Nav.Link as={Link} to="/">DESTINATION</Nav.Link>
             <Nav.Link as={Link} to="/weddingplans">WEDDING PLANS</Nav.Link>
             <Nav.Link as={Link} to="/corporates">CORPORATE EVENT</Nav.Link>
             <Nav.Link as={Link} to="/vlogs">VLOGS</Nav.Link>

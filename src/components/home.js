@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import "bootstrap/dist/js/bootstrap.bundle.min"; 
 import "./css/home.css";
@@ -21,18 +21,82 @@ import service10 from './photos/10.png';
 import service11 from './photos/11.png';
 import service12 from './photos/12.png';
 function HomePage() {
-  return (
-    <div className="Container-Fluid">
-      {/* Search bar */}
-      <nav class="navbars bg-body-tertiary">
-  <div class="container-fluid">
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button class="btn btn-outline-success" type="submit">BOOK AN APPOINTMENT </button>
-    </form>
-  </div>
-</nav>
-      {/* Carousel Section */}
+     const [showForm, setShowForm] = useState(false);
+     const [formData, setFormData] = useState({
+       name: "",
+       contact: "",
+       email: "",
+       plan: "",
+     });
+   
+     // Input Change Handling
+     const handleChange = (e) => {
+       const { name, value } = e.target;
+   
+       // Validation
+       if (name === "name" && !/^[a-zA-Z\s]*$/.test(value)) return; 
+       if (name === "contact" && !/^\d*$/.test(value)) return; 
+       setFormData({ ...formData, [name]: value });
+     };
+   
+     // Form Submit
+     const handleSubmit = (e) => {
+       e.preventDefault();
+      
+       if (!/\S+@\S+\.\S+/.test(formData.email)) {
+         alert("Please enter a valid email address.");
+         return;
+       }
+   
+       // Store in Local Storage
+       localStorage.setItem("appointmentData", JSON.stringify(formData));
+   
+       alert("Appointment details saved!");
+       setShowForm(false); 
+     };
+
+return (
+  <div className="Container-Fluid">
+    {/* Search bar */}
+    <nav className="navbars bg-body-tertiary">
+      <div className="container-fluid">
+        <form className="d-flex" role="search">
+          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button type="button" className="btn btn-outline-success" onClick={() => setShowForm(true)}>
+            BOOK AN APPOINTMENT
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    {/* Appointment Form (Absolute Positioned) */}
+   {showForm && (
+        <div className="appointment-form">
+          <div className="form-header">
+            <h3>Book an Appointment</h3>
+            <button className="close-btn" onClick={() => setShowForm(false)}>✖</button>
+          </div>
+          <h3>Let us discuss about your Dream Gather</h3>
+
+          <form onSubmit={handleSubmit}>
+            <input type="text" className="form-control input-icon-name" name="name" 
+              value={formData.name} onChange={handleChange} placeholder="Name" required /><br></br>
+
+            <input type="tel" className="form-control input-icon-phone" name="contact" 
+              value={formData.contact} onChange={handleChange} placeholder="Contact" required /><br></br>
+
+            <input type="email" className="form-control input-icon-email" name="email" 
+              value={formData.email} onChange={handleChange} placeholder="Email" required /><br></br>
+
+            <textarea className="form-control input-icon-lock" name="plan" 
+              value={formData.plan} onChange={handleChange} 
+              placeholder="Tell us about your plan, we will make it easier" required></textarea>
+
+            <button type="submit" className="btn btn-primary w-100 mt-2">Submit</button>
+          </form>
+        </div>
+      )}
+    {/* Carousel Section */}
       <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -81,102 +145,102 @@ function HomePage() {
       </div>
 
       <div className="services">
-        <div class="card" style={{width: "20rem"}}>
+        <div class="card" style={{width: "22rem"}}>
   <img src={service1} class="card-img-top" alt="specificimages"/>
   <div class="card-body">
     <h5 class="card-title">MICE Events</h5>
     <p class="card-text">Meetings, Incentives, Conference Meetings</p>
-    <a href="Mice" class="btn btn-primary">SPECIFICS</a>
+    <a href="Mice" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
   </div>
-  <div class="card" style={{width: "20rem"}}>
+  <div class="card" style={{width: "22rem"}}>
   <img src={service11} class="card-img-top" alt="speicficimages"/>
   <div class="card-body">
     <h5 class="card-title">Product Launching Events</h5>
     <p class="card-text">Launching a new products is a crucial moment for every business.  This is requires a combination of strategic planning.</p>
-    <a href="Launching" class="btn btn-primary">SPECIFICS</a>
+    <a href="Launching" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
 </div>
-<div class="card" style={{width: "20rem"}}>
+<div class="card" style={{width: "22rem"}}>
   <img src={service12} class="card-img-top" alt="..."/>
   <div class="card-body">
     <h5 class="card-title">Company Gathering</h5>
     <p class="card-text">MN Event  Organizer is a specialist in organizing memorable and impactful corporate meetings.</p>
-    <a href="Gathering" class="btn btn-primary">SPECIFICS</a>
+    <a href="Gathering" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
 </div>
-<div class="card" style={{width: "20rem"}}>
+<div class="card" style={{width: "22rem"}}>
   <img src={service2} class="card-img-top" alt="specificimages"/>
   <div class="card-body">
     <h5 class="card-title">Team Building</h5>
     <p class="card-text">Organizing a team-building event can be a highly rewarding experience, offering numerous benefits to both the organizer and the participants</p>
-    <a href="Building" class="btn btn-primary">SPECIFICS</a>
+    <a href="Building" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
 </div>
-<div class="card" style={{width: "20rem"}}>
+<div class="card" style={{width: "22rem"}}>
   <img src={service9} class="card-img-top" alt="specificimages"/>
   <div class="card-body">
     <h5 class="card-title">Themed Catering
     </h5>
     <p class="card-text">Each of these themes unique dining experience, transporting guest to a different time or place and making the evening truly unforgettadble</p>
-    <a href="Catering" class="btn btn-primary">SPECIFICS</a>
+    <a href="Catering" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
 </div>
-<div class="card" style={{width: "20rem"}}>
+<div class="card" style={{width: "22rem"}}>
   <img src={service10} class="card-img-top" alt="specificimages"/>
   <div class="card-body">
     <h5 class="card-title">Tour Organizer
     </h5>
     <p class="card-text">Our passion is a curating unforgettadble journeys, bring together like-minded adventures, and revealing the hidden gems of our planet. </p>
-    <a href="Tour" class="btn btn-primary">SPECIFICS</a>
+    <a href="Tour" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
 </div>
-<div class="card" style={{width: "20rem"}}>
+<div class="card" style={{width: "22rem"}}>
   <img src={service3} class="card-img-top" alt="specificimages"/>
   <div class="card-body">
     <h5 class="card-title">Sound Systems</h5>
     <p class="card-text">We are a provider of sound system rental services with various package options ranging from speakers, wireless mic, cable mic, mixer etc.</p>
-    <a href="Sound" class="btn btn-primary">SPECIFICS</a>
+    <a href="Sound" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
 </div>
-<div class="card" style={{width: "20rem"}}>
+<div class="card" style={{width: "22rem"}}>
   <img src={service4}class="card-img-top" alt="specificimage"/>
   <div class="card-body">
     <h5 class="card-title">Lighting</h5>
     <p class="card-text">We are a provider of event lighting rental services with various package options ranging from par LED, moving head, halogen, smoke machine, etc. </p>
-    <a href="Lighting" class="btn btn-primary">SPECIFICS</a>
+    <a href="Lighting" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
 </div>
-<div class="card" style={{width: "20rem"}}>
+<div class="card" style={{width: "22rem"}}>
   <img src={service5} class="card-img-top" alt="specificimage"/>
   <div class="card-body">
     <h5 class="card-title">Entertainment</h5>
     <p class="card-text">We are a provider various Entertainment such as dance (traditional & modern), music, event MC, Usher, and SPG </p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Entertainment" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
 </div>
-<div class="card" style={{width: "20rem"}}>
+<div class="card" style={{width: "22rem"}}>
   <img src={service6} class="card-img-top" alt="specificimage"/>
   <div class="card-body">
     <h5 class="card-title">Photography</h5>
     <p class="card-text">We also provide various Photography Services Such as Candid, Videography, Albums </p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Photography" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
 </div>
-<div class="card" style={{width: "20rem"}}>
+<div class="card" style={{width: "22rem"}}>
   <img src={service7} class="card-img-top" alt="..."/>
   <div class="card-body">
     <h5 class="card-title">Stage Decoration</h5>
     <p class="card-text">We Provide various types of stages for your events such as gala dinners, awards night,etc. </p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Stage" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
 </div>
-<div class="card" style={{width: "20rem"}}>
+<div class="card" style={{width: "22rem"}}>
   <img src={service8} class="card-img-top" alt="Specificimages"/>
   <div class="card-body">
     <h5 class="card-title">Multimedia</h5>
     <p class="card-text">We are a provider of multimedia rental  services for event/meeting needs such as projectors, laptop, computers (PCs), Printers, Drone Camera etc.  </p>
-    <a href="#" class="btn btn-primary">SPECIFICS</a>
+    <a href="Multimedia" class="btn btn-primary  mt-auto">SPECIFICS</a>
   </div>
 </div>
 </div>
