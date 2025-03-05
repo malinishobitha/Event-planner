@@ -244,7 +244,7 @@ return (
   </div>
 </div>
 </div>
-<div className="card mb-3" style={{ width: "95%" }}>
+<div className="card mb-3" style={{ width: "95%",margin:'auto'}}>
   <div className="row g-0">
     <div className="col-md-6">
       <div className="card-body chooseimg">
